@@ -1,0 +1,38 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+
+  @include break-md-min {
+    font-size: 1rem;
+  }
+}
+
+@mixin font-weight {
+  @for $i from 1 through 9 {
+    .b-#{$i}00 {
+      font-weight: $i * 100;
+    }
+  }
+}
+
+@include font-weight;
+
+.font-default {
+  font-family: "Roboto", sans-serif;
+}
+.font-heading {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.no-decoration {
+  text-decoration: none;
+}

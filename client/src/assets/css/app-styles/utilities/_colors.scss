@@ -1,0 +1,15 @@
+$primary: rgb(255, 0, 0);
+$primaryLight: lighten($primary, 10%);
+$primaryDark: darken($primary, 10%);
+
+$secondary: #ddd;
+$secondaryLight: lighten($primary, 10%);
+$secondaryDark: darken($primary, 10%);
+
+$light: rgb(207, 207, 207);
+$lightLight: lighten($light, 10%);
+$lightDark: darken($light, 10%);
+
+$dark: rgb(39, 39, 39);
+$darkLight: lighten($dark, 10%);
+$darkDark: darken($dark, 10%);
