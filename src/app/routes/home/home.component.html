@@ -1,4 +1,47 @@
 <app-topnav></app-topnav>
-<div class="cs pmw">
-  asdf
+<div class="pmw bg-gradient-light">
+  <div class="container">
+    <div class="row">
+      <div class="mx-auto col-12 col-md-10 col-lg-8">
+        <div class="row align-items-center">
+          <div class="py-5 col-6">
+            <span class="mb-4 px-2 py-1 badge badge-primary rounded-0"><b class="b-500">Black Friday Sale</b></span>
+            <div>
+              <span>Premade Collection</span>
+              <h1 class="font-default">Gaming Station</h1>
+            </div>
+            <p>Experience Extreme Gaming Performance.</p>
+            <p>With over <b>$500</b> in extra value.</p>
+            <p>Windows 10&nbsp;&middot;&nbsp;250 GB SSD</p>
+          </div>
+          <div class="py-5 col-6">
+            <img src="../../../assets/images/hero_pc.png" alt="" width="80%" height="auto" class="mx-auto d-block">
+            <p class="m-0 mt-n4 text-center"><b>Starting at</b></p>
+            <p class="m-0 h1 text-center">$1600</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pmw pt-5 pb-5">
+  <div class="container-fluid" style="max-width: 1500px;">
+    <div class="row">
+      <div class="d-none d-md-block col-auto" style="flex: 0 0 250px;">
+        asdf
+      </div>
+      <div class="col">
+        <p>Choose your customisations</p>
+        <h2 class="h6">MOTHERBOARDS</h2>
+        <hr class="border-black" />
+        <div class="row">
+          <ng-container *ngFor="let item of this.items">
+            <div class="productOptionCol">
+              <app-product-option [isSelected]="item.selected"></app-product-option>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

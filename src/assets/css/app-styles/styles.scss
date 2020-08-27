@@ -1,29 +1,14 @@
-@import "./utilities/colors";
+@import "./utilities/variables";
 @import "./utilities/breakpoints";
 
-.cs {
-  --primary: #{$primary};
-  --primaryLight: #{$primaryLight};
-  --primaryDark: #{$primaryDark};
-  --secondary: #{$secondary};
-  --secondaryLight: #{$secondaryLight};
-  --secondaryDark: #{$secondaryDark};
-
-  --dark: #{$dark};
-  --darkLight: #{$darkLight};
-  --darkDark: #{$darkDark};
-
-  --pmw: 360px;
-
-
+:root {
+  --pmw: 340px;
 }
 
-.cs.pmw {
+.pmw {
   min-width: var(--pmw);
 }
 
-.cs {
-  @import "./partials/backgrounds";
-  @import "./partials/buttons";
-  @import "./partials/text";
-}
+@import "./partials/backgrounds";
+@import "./partials/buttons";
+@import "./partials/text";

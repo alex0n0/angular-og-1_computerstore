@@ -1,6 +1,5 @@
 * {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
 
   @include break-md-min {
     font-size: 1rem;
@@ -14,22 +13,12 @@
     }
   }
 }
-
 @include font-weight;
 
 .font-default {
   font-family: "Roboto", sans-serif;
 }
 .font-heading {
-  font-family: "Fira Sans", sans-serif;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
   font-family: "Fira Sans", sans-serif;
 }
 

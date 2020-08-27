@@ -1,27 +1,61 @@
-# Client
+# Computer Store
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+[Click here](https://www.figma.com/proto/UME5pAh8R8hY6JCD58wiWD/Computers?node-id=1%3A2&scaling=min-zoom) for an design.
 
-## Development server
+[Click here](https://alex0n0.github.io/computerstore/) for demo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![screenshot 1](/client/public/screenshot_orderaway1.png)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ...
+  - ...
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Begin by cloning the [OrderAway](https://github.com/alex0n0/OrderAway) repository and install dependencies:
 
-## Running unit tests
+```terminal
+...
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Build the application and start the server to see it in action:
 
-## Running end-to-end tests
+```javascript
+...
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Folder Structure
 
-## Further help
+```text
+reactclickergame/
+├── public/
+│   ├── background.jpg <- application background
+│   └── logoDC.png <- home link logo
+├── src/
+│   ├── components/
+│   │   ├── imagetile.css
+│   ├── utils/
+│   │   └── villains.js <- array of villain details
+│   ├── App.css <- styling for app
+│   └── App.js <- body of application
+├── package-lock.json
+└── server.js
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Deployment
+
+An express server is included to serve the built project for deployment. To run it locally, build the React application and then start the server:
+
+```terminal
+...
+```
+
+## Built With
+
+Front End
+- ...
+
+## License
+
+This project is licensed under the terms of the [MIT](https://github.com/alex0n0/OrderAway/blob/master/LICENSE) license.

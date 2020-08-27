@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './routes/home/home.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
+import { ProductOptionComponent } from './components/product-option/product-option.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TopnavComponent
+    TopnavComponent,
+    ProductOptionComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

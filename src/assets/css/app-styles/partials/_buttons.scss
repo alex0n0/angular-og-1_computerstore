@@ -1,30 +1,7 @@
-.btn {
-  box-shadow: none !important;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-}
-
-.btn-black {
-  background-color: black;
+.btn-dark-d1 {
+  background-color: darken($custom-dark, 30%);
   color: white;
   &:hover {
-    color: var(--primary);
-  }
-}
-
-.btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  &:hover {
-    background-color: var(--primaryDark);
-    border-color: var(--primaryDark);
-  }
-  &:active {
-    background-color: var(--primaryDark) !important;
-    border-color: var(--primaryDark) !important;
-  }
-  &:focus {
-    background-color: var(--primaryDark) !important;
-    border-color: var(--primaryDark) !important;
+    color: $custom-primary;
   }
 }

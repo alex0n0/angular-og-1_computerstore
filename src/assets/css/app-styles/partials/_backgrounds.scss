@@ -1,7 +1,18 @@
-.bg-primary {
-  background-color: var(--primary) !important;
+.bg-gradient-dark {
+  background: linear-gradient(-90deg, lighten($custom-dark, 25%), lighten($custom-dark, 10%));
 }
 
-.bg-dark {
-  background-color: var(--dark) !important;
+.bg-gradient-light {
+  background: linear-gradient(180deg, white, $custom-light);
+}
+
+.bg-light {
+  background-color: lighten($custom-light, 10%);
+}
+
+.bg-black {
+  background-color: black;
+}
+.border-black {
+  border-color: black;
 }

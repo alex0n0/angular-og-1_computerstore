@@ -1,9 +1,3 @@
-$break-xs: 0;
-$break-sm: 576px;
-$break-md: 768px;
-$break-lg: 992px;
-$break-xl: 1200px;
-
 @mixin break-sm-min {
   @media (min-width: $break-sm) {
     @content;
