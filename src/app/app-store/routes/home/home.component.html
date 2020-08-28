@@ -1,0 +1,107 @@
+<div class="app-store">
+  <app-topnav></app-topnav>
+  <section class="pmw bg-gradient-light">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-12 col-md-10 col-lg-8">
+          <div class="row align-items-center">
+            <div class="py-5 col-6">
+              <span class="mb-4 px-2 py-1 badge badge-primary rounded-0"><b class="b-500">Black Friday Sale</b></span>
+              <div>
+                <span>Premade Collection</span>
+                <h1 class="font-default">Gaming Station</h1>
+              </div>
+              <p>Experience Extreme Gaming Performance.</p>
+              <p>With over <b>$500</b> in extra value.</p>
+              <p>Windows 10&nbsp;&middot;&nbsp;250 GB SSD</p>
+            </div>
+            <div class="py-5 col-6">
+              <img src="../../../assets/images/hero_pc.png" alt="" width="80%" height="auto" class="mx-auto d-block">
+              <p class="m-0 mt-n4 text-center"><b>Starting at</b></p>
+              <p class="m-0 h1 text-center">$1600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pmw pt-5 pb-5">
+    <div class="container-fluid productOptionContainer">
+      <div class="row">
+        <div class="pr-4 d-none d-md-block col-auto" style="flex: 0 0 300px;">
+          <img src="../../../../assets/images/promotion_banner_vertical.png" class="mb-5" alt="" width="100%" height="auto">
+          <h3>Recently Viewed</h3>
+          <div class="border border-black rounded-lg">
+            <app-product></app-product>
+            <app-product></app-product>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="mr-auto">
+              <p>Choose your customisations</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nostrum ipsam consequuntur ipsum amet, voluptates, possimus a unde nihil error, quas nemo minus similique ipsa dignissimos temporibus atque. Officiis necessitatibus soluta modi quos minima enim, nisi cumque tempora? Possimus, facilis.</p>
+            </div>
+            <div class="m-0 productOptionCol d-flex flex-column align-items-end justify-content-end">
+              <p class="m-0 h4 b-400">Total Cost</p>
+              <b class="m-0 h2">${{this.totalCost}}</b>
+            </div>
+          </div>
+
+
+          <div *ngIf="!this.loadingInitial">
+            <p *ngIf="this.productGroups.length == 0" class="py-5 w-100 text-center">No results were found</p>
+            <ng-container *ngFor="let productGroup of this.productGroups;">
+              <h2>{{productGroup.GroupName}}</h2>
+              <hr class="border-black" />
+              <div class="mx-n2 mb-5 row">
+
+                <ng-container *ngFor="let product of productGroup.Products">
+                  <div class="productOptionCol">
+                    <app-product-option [productInfo]="product"
+                      (productSelectionOutput)="productSelectionOutput(productGroup.ID, $event);"></app-product-option>
+                  </div>
+                </ng-container>
+              </div>
+            </ng-container>
+          </div>
+
+          <div class="d-flex flex-column align-items-end">
+            <p class="m-0 h4 b-400">Total Cost</p>
+            <b class="h2">${{this.totalCost}}</b>
+          </div>
+
+          <ng-container *ngIf="this.loadingInitial">
+            <div class="py-5 d-flex justify-content-center">
+              <div class="mx-2 spinner-grow spinner-grow-sm text-dark" role="status"></div>
+              <div class="mx-2 spinner-grow spinner-grow-sm text-dark" role="status"></div>
+              <div class="mx-2 spinner-grow spinner-grow-sm text-dark" role="status"></div>
+            </div>
+          </ng-container>
+
+
+          <h3>Customers also bought</h3>
+          <div class="mx-n2 row">
+            <div class="productOptionCol">
+              <app-product></app-product>
+            </div>
+            <div class="productOptionCol">
+              <app-product></app-product>
+            </div>
+            <div class="productOptionCol">
+              <app-product></app-product>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+  <!-- <div class="pmw shadow border-top position-fixed w-100 bg-white" style="bottom: 0px; left: 0px;">
+    <div class="container-fluid productOptionContainer d-flex align-items-center" style="height: 80px;">
+      <b class="ml-auto">${{this.totalCost}}</b>
+    </div>
+  </div> -->
+</div>

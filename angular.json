@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/assets/css/bootstrap/bootstrap.scss",
-              "src/assets/css/app-styles/styles.scss",
+              "src/assets/css/app-styles/style.scss",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -87,7 +87,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/assets/css/bootstrap/bootstrap.scss",
-              "src/assets/css/app-styles/styles.scss",
+              "src/assets/css/app-styles/style.scss",
               "src/styles.scss"
             ],
             "scripts": [],

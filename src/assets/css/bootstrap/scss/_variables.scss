@@ -1,4 +1,4 @@
-@import "../../app-styles/utilities/variables";
+@import "../../variables";
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -497,6 +497,7 @@ $input-color:                           $gray-700 !default;
 $input-border-color:                    $gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
+$input-box-shadow:                      none;
 
 $input-border-radius:                   $border-radius !default;
 $input-border-radius-lg:                $border-radius-lg !default;
@@ -507,6 +508,7 @@ $input-focus-border-color:              lighten($component-active-bg, 25%) !defa
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+$input-focus-box-shadow:                none;
 
 $input-placeholder-color:               $gray-600 !default;
 $input-plaintext-color:                 $body-color !default;

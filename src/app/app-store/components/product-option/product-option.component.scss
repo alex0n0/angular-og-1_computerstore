@@ -1,0 +1,27 @@
+.product-option {
+  .card-header {
+    background: transparent;
+    color: black;
+    transition: 0.4s all;
+    &:hover {
+      transition: 0.1s all;
+      background: var(--dark-l1);
+      color: white;
+      cursor: pointer;
+    }
+    .check {
+      display: none;
+    }
+  }
+
+  &.selected {
+    border-color: black;
+    .card-header {
+      background: black;
+      color: white;
+      .check {
+        display: block;
+      }
+    }
+  }
+}

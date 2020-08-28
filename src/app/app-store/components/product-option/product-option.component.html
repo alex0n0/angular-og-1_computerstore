@@ -1,0 +1,23 @@
+<div class="product-option card overflow-hidden" [class.selected]="this.productInfo.IsSelected">
+  <div class="py-2 px-3 card-header border-0 position-relative" (click)="handleClickProductOption();">
+    <small>SKU: {{this.productInfo.SKU | uppercase }}</small>
+    <div class="position-absolute border rounded-circle d-flex align-items-center justify-content-center"
+      style="top: 50%;right: 1rem; transform: translateY(-50%); height: 1rem; width: 1rem;">
+      <span class="check material-icons ml-1 mb-1" style="font-size: 1rem;">check</span>
+    </div>
+  </div>
+  <div class="px-3 card-body">
+    <img src="../../../assets/images/motherboard.jpg" alt="" height="120px" width="auto" class="mx-auto mb-2 d-block">
+    <p class="m-0 b-600">{{this.productInfo.ProductName}}</p>
+    <p class="m-0 mb-3">{{this.productInfo.ProductBrand}}</p>
+    <div class="d-flex align-items-center flex-wrap">
+      <p *ngIf="this.productInfo.IsIncluded" class="m-0 b-600">Included in offer</p>
+      <p *ngIf="! this.productInfo.IsIncluded"class="m-0 h5 b-600">+&nbsp;${{this.productInfo.AdditionalCost}}</p>
+      <!-- <button class="ml-auto p-0 btn d-flex align-items-center" (click)="this.handleClickToggleDetail();">
+        <span class="material-icons">{{this.isExpanded ? "expand_less":"expand_more"}}</span></button> -->
+    </div>
+  </div>
+  <!-- <div class="card-body bg-light">
+    asdf
+  </div> -->
+</div>

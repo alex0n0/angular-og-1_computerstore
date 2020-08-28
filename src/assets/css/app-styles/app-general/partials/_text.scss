@@ -1,0 +1,29 @@
+@mixin font-weight {
+  @for $i from 1 through 9 {
+    .b-#{$i}00 {
+      font-weight: $i * 100;
+    }
+  }
+}
+@include font-weight;
+
+.font-default {
+  font-family: "Roboto", sans-serif;
+}
+.font-heading {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+small {
+  @include break-sm-max {
+    font-size: 14px;
+  }
+}
+
+.text-light::placeholder, .text-white::placeholder {
+  color: darken($custom-light, 25%);
+}
