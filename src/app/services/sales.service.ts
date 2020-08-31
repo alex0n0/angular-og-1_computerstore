@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { IProduct } from "../classes/products";
+import { IProduct } from "../app-store/classes/products";
 
 import { v4 as uuid } from "uuid";
 
@@ -15,12 +15,14 @@ export class SalesService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
+    const ddd = uuid();
+    console.log(typeof ddd);
     var products:IProduct[] = [];
 
     for (let i = 0; i < 6; i++) {
       products.push({
         ID: uuid(),
-        SKU: uuid().substring(0, 7),
+        SKU: uuid(),
         ProductName: "AM4 Gaming fafe",
         ProductBrand: "MSI",
         AdditionalCost: i * 3,
@@ -62,7 +64,7 @@ export class SalesService {
     for (let i = 0; i < 6; i++) {
       products.push({
         ID: uuid(),
-        SKU: uuid().substring(0, 7),
+        SKU: uuid(),
         ProductName: "AM4 Gaming fafe",
         ProductBrand: "MSI",
         AdditionalCost: i * 3,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SalesService } from "../../services/sales.service";
+import { SalesService } from "../../../services/sales.service";
 import { IProduct } from "../../classes/products";
 
 @Component({

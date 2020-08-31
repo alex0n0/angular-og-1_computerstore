@@ -1,6 +1,25 @@
 @import "../variables";
 @import "./utilities/breakpoints";
 
-@import "./app-general/style";
-@import "./app-store/style";
-@import "./app-office/style";
+:root {
+  --dark-l1: #{$custom-dark-l1};
+  --pmw: 340px;
+}
+
+.pmw {
+  min-width: var(--pmw);
+  font-size: 16px;
+}
+
+@import "./app-general/partials/backgrounds";
+@import "./app-general/partials/borders";
+@import "./app-general/partials/buttons";
+@import "./app-general/partials/text";
+
+.app-store {
+  --asdf: rgb(255, 145, 0);
+
+  @include break-sm-max {
+    font-size: 14px;
+  }
+}
