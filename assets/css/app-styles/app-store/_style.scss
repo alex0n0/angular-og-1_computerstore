@@ -1,0 +1,7 @@
+.app-store {
+  --asdf: rgb(255, 145, 0);
+
+  @include break-sm-max {
+    font-size: 14px;
+  }
+}

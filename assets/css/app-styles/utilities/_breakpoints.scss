@@ -1,0 +1,47 @@
+@mixin break-sm-min {
+  @media (min-width: $break-sm) {
+    @content;
+  }
+}
+
+@mixin break-sm-max {
+  @media (max-width: $break-sm) {
+    @content;
+  }
+}
+
+@mixin break-md-min {
+  @media (min-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin break-md-max {
+  @media (max-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin break-lg-min {
+  @media (min-width: $break-lg) {
+    @content;
+  }
+}
+
+@mixin break-lg-max {
+  @media (max-width: $break-lg) {
+    @content;
+  }
+}
+
+@mixin break-xl-min {
+  @media (min-width: $break-xl) {
+    @content;
+  }
+}
+
+@mixin break-xl-max {
+  @media (max-width: $break-xl) {
+    @content;
+  }
+}
